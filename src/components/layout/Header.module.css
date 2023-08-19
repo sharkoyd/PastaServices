@@ -1,0 +1,322 @@
+
+
+@font-face {
+    font-family: paytone one;
+    src: url('../../assets/PaytoneOne-Regular.ttf');
+}
+@font-face {
+    font-family: yaldevi;
+    src: url('../../assets/Yaldevi-ExtraLight.ttf');
+}
+
+
+
+
+
+.Header {
+    background-color: #9790f3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;  
+}
+
+.headertxt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 30%;
+    z-index: 3;
+
+}
+.headerimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 55%;
+
+}
+.title{
+    cursor:default;
+    font-family: paytone one;
+    font-size: 128px;
+    transition:  0.2s  ease-in-out;
+}
+.title:hover{
+
+    transform: scale(0.9);
+
+}
+
+.desc{
+    font-family: yaldevi;
+    font-size: 20px;
+
+}
+
+.headerbuttonholder{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+}
+
+.splashimg{
+    width: 650px;
+    height: 650px;
+    transform: rotate(-50deg);
+    background-image: url("../../assets/pasta.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 4;
+    animation: splashanimation 20s infinite alternate ease-in-out ;
+
+
+}
+@keyframes splashanimation {
+    from {transform:rotate(-50deg) translateY(0);}
+    to {transform: rotate(-30deg) translateY(50px);}
+}
+.lowerparticlescontainer{
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    background-color: transparent;
+    z-index: 3;
+}
+.upperparticlescontainer{
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    background-color: transparent;
+    z-index: 5;
+}
+
+
+.lowerparticle1{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url("../../assets/Instagram-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 22%;
+    left: 25%;
+    transform:   rotateZ(30deg);
+    animation: floatingAnimation1 10s infinite alternate ease-in-out ;
+
+}
+  
+@keyframes floatingAnimation1 {
+    from {transform: translateX(0) translateY(0);}
+    to {transform: translateX(10PX) translateY(-30PX);}
+}
+
+
+
+.lowerparticle2{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url("../../assets/Youtube-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 25%;
+    right: 15%;
+    transform:   rotateZ(30deg);
+    animation: floatingAnimation2 10s infinite alternate ease-in-out ;
+
+}
+@keyframes floatingAnimation2 {
+    from {transform: translateX(0) translateY(0);}
+    to {transform: translateX(30px) translateY(30PX);}
+}
+.lowerparticle3{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-image: url("../../assets/Tiktok.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 54%;
+    right: 25%;
+    transform:   rotateZ(-10deg);
+    animation: floatingAnimation3 10s infinite alternate ease-in-out ;
+
+}
+@keyframes floatingAnimation3 {
+    from {transform: translateX(0) translateY(0);}
+    to {transform: translateX(10px) translateY(-5PX);}
+}
+.lowerparticle4{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url("../../assets/Facebook-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    bottom: 15%;
+    right: 27%;
+    transform:   rotateZ(10deg);
+    animation: floatingAnimation4 20s infinite alternate ease-in-out ;
+
+}
+@keyframes floatingAnimation4 {
+    from {transform: translateX(0) translateY(0);}
+    to {transform: translateX(-50px) translateY(-50PX);}
+}
+.upperparticle1{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-image: url("../../assets/webdev.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    bottom: 35%;
+    left: 13%;
+    transform:   rotateZ(-30deg);
+    animation: floatingAnimation5 12s infinite alternate ease-in-out ;
+
+}
+@keyframes floatingAnimation5 {
+    from {transform: translateX(0) translateY(0);}
+    to {transform: translateX(-30px) translateY( 30PX);}
+}
+.upperparticle2{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background-image: url("../../assets/video.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    bottom: 10%;
+    left: 10%;
+    transform:   rotateZ(20deg);
+    animation: floatingAnimation6 10s infinite alternate ease-in-out ;
+
+}
+@keyframes floatingAnimation6 {
+    from {transform: translateX(0) translateY(0);}
+    to {transform: translateX(20px) translateY(30PX) rotateZ(30deg);}
+}
+
+.triaglescontainer{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    z-index: 1;
+    
+}
+.triangle1{
+    position: absolute;
+    width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #FF917F;
+
+    top: 10%;
+    left: 3%;
+    filter : blur(2px);
+    transform:   rotateZ(-20deg);
+    
+}
+.triangle2{
+    position: absolute;
+    width: 0;
+	height: 0;
+	border-left: 70px solid transparent;
+	border-right: 70px solid transparent;
+	border-bottom: 85px solid #FF917F;
+
+    top: 20%;
+    left: 18%;
+    filter : blur(3px);
+    transform:   rotateZ(-40deg);
+
+}
+
+.triangle3{
+    position: absolute;
+    width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 30px solid #FF917F;
+
+    top: 10%;
+    right: 43%;
+    filter : blur(1px);
+    transform:   rotateZ(10deg);
+
+}
+.triangle4{
+    position: absolute;
+    width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 30px solid #FF917F;
+
+    top: 30%;
+    right: 10%;
+    filter : blur(1px);
+    transform:   rotateZ(10deg);
+
+}
+.triangle5{
+    position: absolute;
+    width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 20px solid #FF917F;
+
+    top: 40%;
+    left: 40%;
+    filter : blur(3px);
+    transform:   rotateZ(45deg);
+
+}
+.triangle6{
+    position: absolute;
+    width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 20px solid #FF917F;
+
+    bottom: 24%;
+    left: 20%;
+    filter : blur(2px);
+    transform:   rotateZ(-45deg);
+
+}
+.triangle7{
+    position: absolute;
+    width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 35px solid #FF917F;
+
+    bottom: 15%;
+    right: 15%;
+    filter : blur(2px);
+    transform:   rotateZ(45deg);
+
+}

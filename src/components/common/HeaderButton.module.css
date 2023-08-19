@@ -1,0 +1,29 @@
+@font-face {
+    font-family: yaldevi;
+    src: url('../../assets/Yaldevi-ExtraLight.ttf');
+}
+
+
+
+
+.headerbutton{
+    font-family: yaldevi;
+    background-color: white;
+    border: 3px solid #9088F6;
+    border-radius: 5px;
+    color: #9088F6;
+    font-size: 19px;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        border: 3px solid #FF917F;
+        color: #FF917F;
+
+    }
+    margin-right: 30px;
+
+}

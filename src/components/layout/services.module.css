@@ -1,0 +1,132 @@
+@font-face {
+    font-family: paytone one;
+    src: url('../../assets/PaytoneOne-Regular.ttf');
+}
+@font-face {
+    font-family: yaldevi;
+    src: url('../../assets/Yaldevi-ExtraLight.ttf');
+}
+
+
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #73BDF8;
+}
+.titlecontainer{
+    font-family: paytone one;
+    font-size: 52px;
+    margin-bottom: 50px;
+}
+
+.lowerparticlescontainer{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    z-index: 3;
+}
+.lowerparticle1{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-image: url("../../assets/Youtube-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 22%;
+    left: 5%;
+    transform:   rotateZ(-30deg);
+    filter: blur(3px);
+}
+
+
+
+.lowerparticle2{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url("../../assets/Instagram-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    bottom: 25%;
+    right: 3%;
+    transform:   rotateZ(30deg);
+    filter: blur(5px);
+}
+
+.lowerparticle3{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-image: url("../../assets/webdev.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    bottom: 5%;
+    right: 45%;
+    transform:   rotateZ(30deg);
+    filter: blur(10px);
+}
+
+.categoriescontainer{
+    background-color: rgba(0, 0, 0, 0.524);
+    border-radius: 10px;
+    font-family: yaldevi;
+    font-size: 20px;
+    z-index: 6;
+    height: 70%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    text-align: center;
+}
+.categorytext{
+    font-family: yaldevi;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 5%;
+    
+}
+.categorypricing{
+    font-family: yaldevi;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 10%;
+    width: 80%;
+    text-align: left;
+    overflow: hidden;
+}
+
+.categorysep{
+    background-color: rgba(255, 255, 255, 0.315);
+    width: 1px;
+    height: 70%;
+    margin-top: 5%;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    transition: 0.2s;
+    cursor: crosshair ;
+    
+}
+.service:hover{
+    transform: scale(1.5);
+
+    
+}
