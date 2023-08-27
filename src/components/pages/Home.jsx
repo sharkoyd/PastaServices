@@ -28,28 +28,29 @@ const Home = () => {
         <ParallaxLayer offset={0}  speed={10}>
           <Header />
         </ParallaxLayer>
-        <ParallaxLayer offset={1}  speed={4} sticky={{ start: 0.75, end: 2 }} >
+        <ParallaxLayer offset={1}  speed={0.1} sticky={{ start: 0.90, end: 1.5 }} >
           <About />
         </ParallaxLayer>
-        <ParallaxLayer offset={2}  speed={10} sticky={{ start: 1.8, end: 2 }} >
-          <Cards />
-        </ParallaxLayer>
-        <ParallaxLayer offset={3} speed={2} sticky={{ start: 2.8, end: 4 }}>
-          <Team />
-        </ParallaxLayer>
-        <ParallaxLayer offset={4} speed={0.3}  >
+        <ParallaxLayer offset={1.5} speed={0.3} >
           <Images img={1} />
         </ParallaxLayer>
-        <ParallaxLayer offset={4.3} speed={0.5} >
+        <ParallaxLayer offset={1.7} speed={0.5} >
           <Images img={2} />
         </ParallaxLayer>
-        <ParallaxLayer offset={4.6} speed={0.7} >
-          <Images img={2} />
+        <ParallaxLayer offset={1.8} speed={0.7} >
+          <Images img={3} />
         </ParallaxLayer>
-        <ParallaxLayer offset={4.9} speed={1} >
-          <Images img={2} />
+        <ParallaxLayer offset={1.95} speed={1} >
+          <Images img={4} />
         </ParallaxLayer>
-        <ParallaxLayer offset={5} speed={5}>
+
+        <ParallaxLayer offset={3} speed={5} sticky={{ start: 3, end: 5 }}>
+          <Team />
+        </ParallaxLayer>
+        <ParallaxLayer offset={4}  speed={10} sticky={{ start: 3.5, end: 5 }} >
+          <Cards />
+        </ParallaxLayer>
+        <ParallaxLayer offset={5} speed={5} sticky={{ start: 4.9, end: 5 }}>
           <Services />
         </ParallaxLayer>
       </Parallax>
