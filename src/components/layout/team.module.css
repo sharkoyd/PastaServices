@@ -1,26 +1,14 @@
-@font-face {
-    font-family: paytone one;
-    src: url('../../assets/PaytoneOne-Regular.ttf');
-}
-@font-face {
-    font-family: yaldevi;
-    src: url('../../assets/Yaldevi-ExtraLight.ttf');
-}
 
+.team{
 
-.about{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     width: 40vw;
-    margin-left: 10vw;
-
-
-
+    margin-left: 50vw;
 }
-
 
 
 

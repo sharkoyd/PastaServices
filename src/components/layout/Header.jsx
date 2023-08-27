@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Header.module.css'
 import {HeaderButton} from '../common/HeaderButton'
 import { useState } from "react";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 const Header = () => {
     // State to track mouse coordinates
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -20,9 +21,10 @@ const Header = () => {
 
   return (
     <div className={styles.Header} onMouseMove={handleMouseMove}>
+      
         <div className={styles.headertxt}>
-            <h1 className={styles.title}>Our Name</h1>
-            <p className={styles.desc}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <h1 className={styles.title}>Pasta Services</h1>
+            <p className={styles.desc}>Elevating Your Brand's Digital Odyssey: Where Imagination and Precision Unite to Craft Unforgettable Online Ventures.</p>
             <div className={styles.headerbuttonholder}>
                 <HeaderButton value='Get in touch' />
                 <HeaderButton value='View offers' />

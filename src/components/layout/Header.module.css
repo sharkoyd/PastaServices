@@ -14,13 +14,13 @@
 
 
 .Header {
-    background-color: #9790f3;
+    background-color: transparent;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     height: 100vh;  
 }
 
@@ -38,10 +38,12 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width: 55%;
+    width: 60%;
+    
 
 }
 .title{
+    color: #ff917f;
     cursor:default;
     font-family: paytone one;
     font-size: 128px;
@@ -149,14 +151,14 @@
     background-size: cover;
     background-position: center;
     top: 54%;
-    right: 25%;
+    right: 10%;
     transform:   rotateZ(-10deg);
-    animation: floatingAnimation3 10s infinite alternate ease-in-out ;
+    animation: floatingAnimation3 15s infinite alternate ease-in-out ;
 
 }
 @keyframes floatingAnimation3 {
     from {transform: translateX(0) translateY(0);}
-    to {transform: translateX(10px) translateY(-5PX);}
+    to {transform: translateX(10px) translateY(-50PX);}
 }
 .lowerparticle4{
     position: absolute;
@@ -167,7 +169,7 @@
     background-size: cover;
     background-position: center;
     bottom: 15%;
-    right: 27%;
+    right: 20%;
     transform:   rotateZ(10deg);
     animation: floatingAnimation4 20s infinite alternate ease-in-out ;
 
@@ -184,8 +186,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    bottom: 35%;
-    left: 13%;
+    bottom: 40%;
+    left: 7%;
     transform:   rotateZ(-30deg);
     animation: floatingAnimation5 12s infinite alternate ease-in-out ;
 
@@ -203,7 +205,7 @@
     background-size: cover;
     background-position: center;
     bottom: 10%;
-    left: 10%;
+    left: 25%;
     transform:   rotateZ(20deg);
     animation: floatingAnimation6 10s infinite alternate ease-in-out ;
 
@@ -220,103 +222,4 @@
     background-color: transparent;
     z-index: 1;
     
-}
-.triangle1{
-    position: absolute;
-    width: 0;
-	height: 0;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-bottom: 50px solid #FF917F;
-
-    top: 10%;
-    left: 3%;
-    filter : blur(2px);
-    transform:   rotateZ(-20deg);
-    
-}
-.triangle2{
-    position: absolute;
-    width: 0;
-	height: 0;
-	border-left: 70px solid transparent;
-	border-right: 70px solid transparent;
-	border-bottom: 85px solid #FF917F;
-
-    top: 20%;
-    left: 18%;
-    filter : blur(3px);
-    transform:   rotateZ(-40deg);
-
-}
-
-.triangle3{
-    position: absolute;
-    width: 0;
-	height: 0;
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
-	border-bottom: 30px solid #FF917F;
-
-    top: 10%;
-    right: 43%;
-    filter : blur(1px);
-    transform:   rotateZ(10deg);
-
-}
-.triangle4{
-    position: absolute;
-    width: 0;
-	height: 0;
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
-	border-bottom: 30px solid #FF917F;
-
-    top: 30%;
-    right: 10%;
-    filter : blur(1px);
-    transform:   rotateZ(10deg);
-
-}
-.triangle5{
-    position: absolute;
-    width: 0;
-	height: 0;
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-	border-bottom: 20px solid #FF917F;
-
-    top: 40%;
-    left: 40%;
-    filter : blur(3px);
-    transform:   rotateZ(45deg);
-
-}
-.triangle6{
-    position: absolute;
-    width: 0;
-	height: 0;
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-	border-bottom: 20px solid #FF917F;
-
-    bottom: 24%;
-    left: 20%;
-    filter : blur(2px);
-    transform:   rotateZ(-45deg);
-
-}
-.triangle7{
-    position: absolute;
-    width: 0;
-	height: 0;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-bottom: 35px solid #FF917F;
-
-    bottom: 15%;
-    right: 15%;
-    filter : blur(2px);
-    transform:   rotateZ(45deg);
-
 }
