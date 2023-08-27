@@ -7,6 +7,9 @@ export const Navbar = (props) => {
     <div className={styles.navbar}>
 
       <div className={styles.navigation}>
+      
+
+      
         <NavButton className="nav-button" value="About us" scroll={props.scroll} topage={2} />
         <NavButton className="nav-button" value="The team" scroll={props.scroll} topage={3} />
         <NavButton className="nav-button" value="Our services" scroll={props.scroll} topage={5} />
