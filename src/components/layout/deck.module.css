@@ -1,10 +1,13 @@
 .container {
-
+    position: sticky;
     display: flex;
     align-items: center;
     height: 100%;
     width: 50vw;
     justify-content: center;
+    z-index: 5;
+    background-color: #ff917f;
+    border-radius: 10px 10px 0 0;
 
 
     
@@ -20,6 +23,7 @@
     touch-action: none;
     cursor: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png') 39 39,
     auto;
+    z-index: inherit;
   }
   
   .deck > div {
@@ -45,6 +49,8 @@
       width: 100vw;
       justify-content: center;
       border-radius: 2%;
+      background-color: transparent;
+
   
       
     }

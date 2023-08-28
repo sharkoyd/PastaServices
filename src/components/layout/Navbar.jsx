@@ -11,8 +11,8 @@ export const Navbar = (props) => {
 
       
         <NavButton className="nav-button" value="About us" scroll={props.scroll} topage={2} />
-        <NavButton className="nav-button" value="The team" scroll={props.scroll} topage={3} />
-        <NavButton className="nav-button" value="Our services" scroll={props.scroll} topage={5} />
+        <NavButton className="nav-button" value="The team" scroll={props.scroll} topage={4} />
+        <NavButton className="nav-button" value="Our services" scroll={props.scroll} topage={6} />
       </div>
       
     </div>

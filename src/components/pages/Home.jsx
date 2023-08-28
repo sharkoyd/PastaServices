@@ -36,7 +36,8 @@ const Home = () => {
         <ParallaxLayer offset={0}  speed={3}>
           <Header />
         </ParallaxLayer>
-        <ParallaxLayer offset={1}  speed={0.1} sticky={{ start: 1, end: 3 }} >
+        
+        <ParallaxLayer offset={1}  speed={0.1} sticky={{ start: 1, end: 4 }} >
           <About />
         </ParallaxLayer>
         <ParallaxLayer offset={1.5} speed={0.3} >
@@ -52,13 +53,15 @@ const Home = () => {
           <Images img={4} />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={3} speed={5} sticky={{ start: 2.5, end: 6 }}>
+        <ParallaxLayer offset={3} speed={5} sticky={{ start: 3, end: 6 }}>
           <Team />
         </ParallaxLayer>
-        <ParallaxLayer offset={4} sticky={{ start: 4, end: 6 }}  >
+
+        <ParallaxLayer offset={3} sticky={{ start: 4, end: 6 }} >
           <Cards />
         </ParallaxLayer>
-        <ParallaxLayer offset={5} speed={5} sticky={{ start: 5.5, end: 5 }}>
+        
+        <ParallaxLayer offset={4} speed={5} sticky={{ start: 5.2, end: 5 }}>
           <Services />
         </ParallaxLayer>
       </Parallax>
