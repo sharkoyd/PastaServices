@@ -267,14 +267,14 @@
         color: #ff917f;
         cursor:default;
         font-family: paytone one;
-        font-size: 50px;
+        font-size: 12vw;
 
         transition:  0.2s  ease-in-out;
     }
     .desc{
         margin-top: 15px;
         font-family: yaldevi;
-        font-size:16px;
+        font-size:5vw;
         width: 70%;
         text-align: center;
     

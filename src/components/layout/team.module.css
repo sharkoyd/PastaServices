@@ -25,9 +25,9 @@
     text-align: center;
     margin: 50px 0px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 700px) {
     .team{
-
+        padding-top: 10vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -35,7 +35,7 @@
         height: 100vh;
         width: 100vw;
         margin-left: 0;
-        padding-top: 10vh;
+        background-color: #73BDF8;
     }
     .titlecontainer{
         font-family: paytone one;
@@ -44,11 +44,11 @@
     .paragraphcontainer{
         font-size: 16px;
         font-family: yaldevi;
-        line-height: normal;
+        line-height: 25px;
         width: 80%;
         height: 100vh;
         
-        text-align: center;
+        text-align: justify;
         margin: 0px 0px;
         margin-top: 30px;
     }

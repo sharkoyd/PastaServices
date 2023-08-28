@@ -25,10 +25,7 @@ const Header = () => {
         <div className={styles.headertxt}>
             <h1 className={styles.title}>Pasta Services</h1>
             <p className={styles.desc}>Elevating Your Brand's Digital Odyssey: Where Imagination and Precision Unite to Craft Unforgettable Online Ventures.</p>
-            <div className={styles.headerbuttonholder}>
-                <HeaderButton value='Get in touch' />
-                <HeaderButton value='View offers' />
-            </div>
+
         </div>
         <div className={styles.headerimg}>
         <div className={styles.upperparticlescontainer}>
