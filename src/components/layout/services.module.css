@@ -15,11 +15,13 @@
     justify-content: center;
     height: 100vh;
     background-color: #9790f3;
+    text-align: right;
+
 }
 .titlecontainer{
     font-family: paytone one;
     font-size: 3vw;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .lowerparticlescontainer{
@@ -76,33 +78,49 @@
 .categoriescontainer{
     border-radius: 10px;
     font-family: yaldevi;
-    font-size: 20px;
+
     z-index: 6;
-    height: 70%;
-    width: 80%;
+    height: 60%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+ border: 1px solid white;
 }
 .category{
+    transition: 0.2s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 5%;
     text-align: center;
+    width: 25%;
+    line-height: 120%;
+    height: 100%;
+
+
 }
+
+.category:hover{
+    width:30%;
+    font-size: 120%;
+
+
+}
+
 .categorytext{
     font-family: yaldevi;
-    font-size: 18px;
     color: #fff;
-    margin-top: 5%;
+    margin-top: 10px;
+    width: 80%;
+    
     
 }
 .categorypricing{
     font-family: yaldevi;
-    font-size: 20px;
+
     color: #fff;
-    margin-top: 10%;
+    margin-top: 20px;
     width: 80%;
     text-align: left;
     overflow: hidden;
@@ -119,18 +137,157 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 15%;
+    transition: 0.2s;
+    cursor: crosshair ;
+    font-size: 25px;
+    
+}
+.servicescontainer{
+    height: 28vh;
+}
+.price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 5%;
     transition: 0.2s;
     cursor: crosshair ;
+    font-size: 25px;
+    height: 100px;
     
-}
-.service:hover{
-    transform: scale(1.5);
 
-    
 }
+
 
 .contact{
     margin-bottom: 20px;
+    display: none;
 
+}
+@media screen and (max-width: 1000px) {
+    .services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #9790F3;
+        text-align: right;
+        border-radius: 10px 10px 0 0;
+    }
+    .titlecontainer{
+        font-family: paytone one;
+        font-size: 3vw;
+        margin-bottom: 10px;
+    }
+    .categoriescontainer{
+        border-radius: 10px;
+        font-family: yaldevi;
+    
+        height: 90vh;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 0px solid white;
+
+
+    }
+    .category{
+        transition: 0.2s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0%;
+        text-align: center;
+        width: 90%;
+        line-height: 120%;
+        height: unset;
+        border: solid 1px rgb(0, 0, 0);
+
+        color: black;
+        border-radius: 10PX;
+        margin: 5px 0px;
+    
+    }
+    .categorypricing{
+        font-family: yaldevi;
+    
+        color: #fff;
+        margin-top: 0;
+        width: 80%;
+        text-align: left;
+        overflow: hidden;
+    }
+    
+    .category h4 {
+        width: 75%;
+        text-align: left;
+        margin: 5px 0;
+}
+    .category:hover{
+
+        width: 60%;
+
+    
+    }
+    .service{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 5%;
+        transition: 0.2s;
+        cursor: crosshair ;
+        font-size: 16px;
+        color: black;
+        
+    }
+    .servicescontainer{
+        height: unset;
+    }
+    .price{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        margin-top: 0%;
+        transition: 0.2s;
+        cursor: crosshair ;
+        font-size: 16px;
+        height: 40px;
+        color: black;
+        
+    
+    }
+    .contact{
+        margin-bottom: 10px;
+        margin-left: 25px;
+        bottom: 1px;
+        display: none;
+        
+        
+    }
+
+
+
+
+    .lowerparticle1{
+        display: none;
+    }
+    
+    
+    
+    .lowerparticle2{
+        display: none;
+    }
+    
+    .lowerparticle3{
+display:none;
+    }
+    .categorysep{
+        display: none;
+    }
 }

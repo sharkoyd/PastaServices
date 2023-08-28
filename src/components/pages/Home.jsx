@@ -9,7 +9,7 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { Cards } from "../layout/Deck.tsx";
 import { Images } from "../layout/Images.jsx";
 import styles from "./home.module.css";
-
+import {Contact} from "../layout/contact.jsx";
 import {Scroll} from "../common/Scroll.jsx";
 
 const Home = () => {
@@ -25,7 +25,7 @@ const Home = () => {
     <div className={styles.home}>
       
 
-      <Parallax pages={6}  className={styles.homepara} ref={ref}>
+      <Parallax pages={7}  className={styles.homepara} ref={ref}>
 
           <Navbar scroll={scrollDown} />
           <ParallaxLayer offset={0}  speed={2} onClick={()=>ref.current.scrollTo(1)}>
@@ -37,7 +37,7 @@ const Home = () => {
           <Header />
         </ParallaxLayer>
         
-        <ParallaxLayer offset={1}  speed={0.1} sticky={{ start: 1, end: 4 }} >
+        <ParallaxLayer offset={1}  speed={0.1} sticky={{ start: 1, end: 3 }} >
           <About />
         </ParallaxLayer>
         <ParallaxLayer offset={1.5} speed={0.3} >
@@ -53,16 +53,15 @@ const Home = () => {
           <Images img={4} />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={3} speed={5} sticky={{ start: 3, end: 6 }}>
+        <ParallaxLayer offset={3} speed={2} sticky={{ start: 3, end: 4 }}>
           <Team />
         </ParallaxLayer>
-
-        <ParallaxLayer offset={3} sticky={{ start: 4, end: 6 }} >
-          <Cards />
-        </ParallaxLayer>
         
-        <ParallaxLayer offset={4} speed={5} sticky={{ start: 5.2, end: 5 }}>
+        <ParallaxLayer offset={4.3}  speed={0.1} sticky={{ start: 4, end: 7 }} >
           <Services />
+        </ParallaxLayer>
+        <ParallaxLayer offset={5}  speed={5} sticky={{ start: 5.2, end: 6 }}>
+          <Contact />
         </ParallaxLayer>
       </Parallax>
     </div>

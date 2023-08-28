@@ -1,0 +1,149 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 100vw;
+
+  background-color: #ff917f;
+  border-radius: 10px 10px 0 0;
+
+}
+
+.titlecontainer {
+  font-family: paytone one;
+  font-size: 3vw;
+}
+.body {
+  width: 90%;
+  height: 80%;
+  display: flex;
+}
+
+.left {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.facebook,
+.instagram {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin: 3%;
+    margin-bottom: 20%;
+    transition: 0.2s ease;
+
+}
+.facebook{
+    background-image: url("../../assets/Facebook-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.instagram{
+    background-image: url("../../assets/Instagram-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.facebook:hover,
+.instagram:hover{
+    transform: scale(0.9);
+}
+
+
+
+.right {
+    height: 100%;
+    width: 50%;
+  }
+  .card {
+    transition: ease 0.2;
+    width: 70%;
+    height: 50%;
+    margin-top: 20%;
+    background-image: url("../../assets/PASTA vc.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 10%;
+    
+    /* Apply 3D rotation effect */
+    transform: perspective(1000px) rotateX(10deg) rotateY(-15deg);
+    transform-origin: center;
+    
+    /* Add a border shadow for a realistic effect */
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    animation: cardrot 10s infinite alternate;
+}
+@keyframes cardrot {
+    from{
+        transform: perspective(1000px) rotateX(-10deg) rotateY(15deg);
+    }
+    to{
+        transform: perspective(1000px) rotateX(10deg) rotateY(-15deg);
+    }
+}
+
+.card:hover {
+    background-image: url("../../assets/PASTA vc.png");
+}
+
+@media screen and (max-width: 700px) {
+    .body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .left {
+        height: 20%;
+        width: 100%;
+      }
+      .right {
+        height: 80%;
+        width: 100%;
+      }
+      .facebook,
+.instagram {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: 3%;
+    margin-bottom: 20%;
+    transition: 0.2s ease;
+
+}
+.card {
+    transition: ease 0.2;
+    width: 310px;
+    height: 200px;
+    margin-top: 30%;
+    background-image: url("../../assets/PASTA vc.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 10%;
+    
+    /* Apply 3D rotation effect */
+    transform: perspective(1000px) rotateX(10deg) rotateY(-15deg);
+    transform-origin: center;
+    
+    /* Add a border shadow for a realistic effect */
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    animation: cardrot 10s infinite alternate;
+}
+.titlecontainer {
+    margin-top: 5VH;
+    font-family: paytone one;
+    font-size: 5vw;
+  }
+}
