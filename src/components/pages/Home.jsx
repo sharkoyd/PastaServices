@@ -9,7 +9,7 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { Cards } from "../layout/Deck.tsx";
 import { Images } from "../layout/Images.jsx";
 import styles from "./home.module.css";
-import {Contact} from "../layout/contact.jsx";
+import {Contact} from "../layout/Contact.jsx";
 import {Scroll} from "../common/Scroll.jsx";
 
 const Home = () => {
