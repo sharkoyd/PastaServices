@@ -25,17 +25,41 @@
 }
 .img1{
     margin-right: 100px;
+    color: #ff917f;
     
 }
 .img2{
     margin-left: 290px;
+    color: #9790f3;
 }
 .img3{
     margin-top: 50px;
     margin-right: 150px;
+    color: #73bdf8;
 }
 .img4{
     margin-top: 100px;
     margin-left: 280px;
+    color: #ff917f;
 }
 
+@media screen and (max-width: 1000px) {
+    .images {
+
+        width: 100vw;
+        opacity: .7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 2;
+        flex-wrap: wrap;
+
+    
+        position: absolute;
+
+    
+        font-family: yaldevi;
+        font-size: 20px;
+    
+    }
+}

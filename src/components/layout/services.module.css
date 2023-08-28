@@ -14,11 +14,11 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #73BDF8;
+    background-color: #9790f3;
 }
 .titlecontainer{
     font-family: paytone one;
-    font-size: 52px;
+    font-size: 3vw;
     margin-bottom: 50px;
 }
 
@@ -31,9 +31,8 @@
 }
 .lowerparticle1{
     position: absolute;
-    width: 200px;
-    height: 200px;
-    background-image: url("../../assets/Youtube-1.png");
+    width: 150px;
+    height: 150px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -41,29 +40,30 @@
     left: 5%;
     transform:   rotateZ(-30deg);
     filter: blur(3px);
+    background-image: url("../../assets/Instagram-1.png");
 }
 
 
 
 .lowerparticle2{
     position: absolute;
-    width: 100px;
-    height: 100px;
-    background-image: url("../../assets/Instagram-1.png");
+    width: 200px;
+    height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     bottom: 25%;
     right: 3%;
     transform:   rotateZ(30deg);
-    filter: blur(5px);
+    background-image: url("../../assets/webdev.png");
+    filter: blur(1px);
 }
 
 .lowerparticle3{
     position: absolute;
-    width: 300px;
-    height: 300px;
-    background-image: url("../../assets/webdev.png");
+    width: 100px;
+    height: 100px;
+    background-image: url("../../assets/Youtube-1.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -74,7 +74,6 @@
 }
 
 .categoriescontainer{
-    background-color: rgba(0, 0, 0, 0.524);
     border-radius: 10px;
     font-family: yaldevi;
     font-size: 20px;
@@ -129,4 +128,9 @@
     transform: scale(1.5);
 
     
+}
+
+.contact{
+    margin-bottom: 20px;
+
 }

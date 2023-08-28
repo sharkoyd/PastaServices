@@ -29,7 +29,7 @@
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    width: 30%;
+    width: 44%;
     z-index: 3;
 
 }
@@ -38,7 +38,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width: 60%;
+    width: 50%;
     
 
 }
@@ -46,7 +46,7 @@
     color: #ff917f;
     cursor:default;
     font-family: paytone one;
-    font-size: 128px;
+    font-size: 7vw;
     transition:  0.2s  ease-in-out;
 }
 .title:hover{
@@ -57,7 +57,8 @@
 
 .desc{
     font-family: yaldevi;
-    font-size: 20px;
+    font-size: 1.2vw;
+    width: 70%;
 
 }
 
@@ -70,8 +71,8 @@
 }
 
 .splashimg{
-    width: 650px;
-    height: 650px;
+    width: 40vw;
+    height: 40vw;
     transform: rotate(-50deg);
     background-image: url("../../assets/pasta.png");
     background-repeat: no-repeat;
@@ -222,4 +223,106 @@
     background-color: transparent;
     z-index: 1;
     
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .Header {
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: right;
+        height: 100vh;  
+    }
+    .headertxt{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content:flex-start;
+        padding-top: 15vh;
+        height: 100vh;
+        width: 100vw;
+        z-index: 3;
+        position: absolute;
+    
+    }
+    .headerimg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        z-index: 0;
+
+
+        
+    
+    }
+    .title{
+        color: #ff917f;
+        cursor:default;
+        font-family: paytone one;
+        font-size: 50px;
+
+        transition:  0.2s  ease-in-out;
+    }
+    .desc{
+        margin-top: 15px;
+        font-family: yaldevi;
+        font-size:16px;
+        width: 70%;
+        text-align: center;
+    
+    }
+    .headerbuttonholder{
+        display: flex;
+        position: absolute;
+        bottom: 15vh;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+        height: 200px;
+        margin-top: 0vh;
+        padding-left: 20px;
+    }
+
+    .splashimg{
+        width: 110vw;
+        height: 110vw;
+        transform: rotate(-50deg);
+        background-image: url("../../assets/pasta.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: 5;
+        margin-top: 200px;
+        animation: splashanimation 20s infinite alternate ease-in-out ;
+    
+    
+    }
+    .lowerparticlescontainer{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: transparent;
+        z-index: 3;
+        filter: blur(8px);
+    }
+    .upperparticlescontainer{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: transparent;
+        z-index: 5;
+        filter: blur(5px);
+    }
+
+
+
 }

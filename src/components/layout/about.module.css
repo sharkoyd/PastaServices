@@ -26,8 +26,9 @@
 
 
 .titlecontainer{
+    color: black;
     font-family: paytone one;
-    font-size: 52px;
+    font-size: 3vw;
 }
 .paragraphcontainer{
     font-size: 25px;
@@ -36,4 +37,31 @@
 
     text-align: center;
     margin: 50px 0px;
+}
+@media screen and (max-width: 1000px) {
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        margin-left: 0;
+    
+    }
+    .titlecontainer{
+        color: black;
+        font-family: paytone one;
+        font-size: 6vw;
+    }
+    .paragraphcontainer{
+        font-size: 16px;
+        font-family: yaldevi;
+        line-height:30px;
+        width: 80%;
+
+    
+        text-align: center;
+        margin: 50px 0px;
+    }
 }

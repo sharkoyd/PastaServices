@@ -13,7 +13,7 @@ const About = () => {
                 <h1>Who are we ?</h1>
             </div>
             <div className={styles.paragraphcontainer}>
-                <p>We're a dynamic team passionate about creating engaging digital experiences. Our goal is to help businesses and brands thrive online.
+                <p>We're a passionate team dedicated to creating engaging digital experiences. Our goal is to help businesses and brands thrive online.
 
 With a unique mix of creativity and expertise, we specialize in strategic solutions. From marketing to software development and visual storytelling, we're here to bring your brand's vision to life.
 

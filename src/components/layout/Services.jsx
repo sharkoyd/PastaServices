@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './services.module.css'
 import { useState } from "react";
 
+import {HeaderButton} from '../common/HeaderButton'
 const Services = () => {
     // State to track mouse coordinates
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -29,7 +30,7 @@ const Services = () => {
         <div className={styles.categoriescontainer}>
 
             <div className={styles.category}>
-                <h1>Design</h1>
+                <h1>DESIGN</h1>
                 <div className={styles.categorytext}>
                     <p>Our team of designers will help you create a unique and memorable brand identity.</p>
                 </div>
@@ -45,7 +46,7 @@ const Services = () => {
             <div className={styles.categorysep}></div>
 
             <div className={styles.category} >
-                <h1>Marketing</h1>
+                <h1>MARKETING</h1>
                 <div className={styles.categorytext}>
                     <p>Our team of marketers will help you create a unique and memorable brand identity.</p>
                 </div>
@@ -61,7 +62,7 @@ const Services = () => {
             <div className={styles.categorysep}></div>
 
             <div className={styles.category} >
-                <h1>Development</h1>
+                <h1>SOFTWARE</h1>
                 <div className={styles.categorytext}>
                     <p>Our team of developers will help you create a unique and memorable brand identity.</p>
                 </div>
@@ -84,6 +85,9 @@ const Services = () => {
                 <div className={styles.lowerparticle2}  style={{ transform: getTransformValue(0, 0.02) }}></div>
                 <div className={styles.lowerparticle3}  style={{ transform: getTransformValue(0, -0.01) }}></div>
                 <div className={styles.lowerparticle4}  style={{ transform: getTransformValue(0, 0.005) }}></div>
+        </div>
+        <div className={styles.contact}>
+            <HeaderButton value="Contact us >"/>
         </div>
     </div>
   )
